@@ -37,7 +37,6 @@
     <!-- bootstrap tree -->
     <link rel="stylesheet" href="css/bootstrap-treeview.css">
     <!-- // bootstrap tree -->
-    <link rel="stylesheet" href="assets/css/personnel.css">
 
 </head>
 <style>
@@ -55,16 +54,16 @@
     <div class="main-grid" style="height:86%;">
         <!-- 主要内容-->
         <div id="content" class="row-fluid fullsrc">
-            <div class="col-md-4 fullsrc" style="padding-top:5px;overflow-y:scroll;">
+            <div class="col-md-3 fullsrc" style="padding-top:5px;overflow-y:scroll;">
                 <div style="height:2em;line-height:2em;" class="form-group">
                     <select class="form-control" onchange="changeTreeInfo(this.value)">
                         <option value="mech">组织机构</option>
                         <option value="post">岗位列表</option>
                     </select>
                 </div>
-                <div id="treeview" class="tree"></div>
+                <div id="treeview"></div>
             </div>
-            <div class="col-md-8" style="height:500px;">
+            <div class="col-md-9" style="height:500px;">
                 <ul id="right_info_tab" class="nav nav-tabs">
                     <li class="active"><a href="#page1" data-toggle="tab">Page1</a></li>
                     <li><a href="#page2" data-toggle="tab">Page2</a></li>

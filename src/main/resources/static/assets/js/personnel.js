@@ -11,76 +11,127 @@ $(function(){
 // 机构树形菜单
 function getMechTree() {
     return [{
-        text: "四川省农村信用社联合社雅安办事处",
+        text: " 雅安农商行",
         id: "0201080092",
         tags:
             ['available'],
         nodes: [
-            { text: "省联社雅安办事处领导班子", id: '0201080093'},
-            { text: "省联社雅安办事处业务综合科", id: '0201080094'},
-            { text: "省联社雅安办事处稽核保卫科", id: '0201080095'},
-            { text: "省联社雅安办事处业务财务科", id: '0201080096'},
-            { text: "省联社雅安办事处汇聚中心", id: '0201080097'},
-            { text: "雅安市雨城区农村信用合作联社", id: '0201080098', state: {expanded: false},
-                nodes: [
-                    {text: "雅安市雨城区农村信用合作联社领导班子", id: "0201080099"},
-                    {text: "雅安市雨城区农村信用合作联社办公室", id: "0201080100"},
-                    {text: "雅安市雨城区农村信用合作联社贷管理部", id: "0201080101"},
-                    {text: "雅安市雨城区农村信用合作联社财务计划部", id: "0201080102"},
-                    {text: "雅安市雨城区农村信用合作联社保卫部", id: "0201080103"},
-                    {text: "雅安市雨城区农村信用合作联社稽核监察部", id: "0201080104"},
-                    {text: "雅安市雨城区农村信用合作联社中间业务部", id: "0201080105"},
-                    {text: "雅安市雨城区农村信用合作联社企业客户中心", id: "0201080106"},
-                    {text: "雅安市雨城区农村信用合作联社个人客户中心", id: "0201080107"},
-                    {text: "雅安市雨城区农村信用合作联社营业部", id: "0201080108"},
-                    {text: "雅安市雨城区农村信用合作联社文化路分社", id: "0201080109"},
-                    {text: "雅安市雨城区农村信用合作联社北郊信用社", id: "0201080110"},
-                    {text: "雅安市雨城区农村信用合作联社南郊信用社", id: "0201080111"},
-                    {text: "雅安市雨城区农村信用合作联社碧峰峡信用社", id: "0201080112"},
-                    {text: "雅安市雨城区农村信用合作联社中里信用社", id: "0201080113"},
-                    {text: "雅安市雨城区农村信用合作联社上里信用社", id: "0201080114"},
-                    {text: "雅安市雨城区农村信用合作联社多营信用社", id: "0201080115"},
-                    {text: "雅安市雨城区农村信用合作联社河北信用社", id: "0201080116"},
-                    {text: "雅安市雨城区农村信用合作联社斗胆分社", id: "0201080117"},
-                    {text: "雅安市雨城区农村信用合作联社孔坪信用社", id: "0201080118"},
-                    {text: "雅安市雨城区农村信用合作联社沙坪信用社", id: "0201080119"},
-                    {text: "雅安市雨城区农村信用合作联社周河信用社", id: "0201080120"},
-                    {text: "雅安市雨城区农村信用合作联社严桥信用社", id: "0201080121"},
-                    {text: "雅安市雨城区农村信用合作联社晏场信用社", id: "0201080122"},
-                    {text: "雅安市雨城区农村信用合作联社城南信用社", id: "0201080123"},
-                    {text: "雅安市雨城区农村信用合作联社草坝信用社", id: "0201080124"},
-                    {text: "雅安市雨城区农村信用合作联社合江信用社", id: "0201080125"},
-                    {text: "雅安市雨城区农村信用合作联社对岩信用社", id: "0201080126"},
-                    {text: "雅安市雨城区农村信用合作联社八步信用社", id: "0201080127"},
-                    {text: "雅安市雨城区农村信用合作联社观化信用社", id: "0201080128"},
-                    {text: "雅安市雨城区农村信用合作联社大兴信用社", id: "0201080129"},
-                    {text: "雅安市雨城区农村信用合作联社姚桥信用社", id: "0201080130"},
-                    {text: "雅安市雨城区农村信用合作联社沙湾分社", id: "0201080131"},
-                    {text: "雅安市雨城区农村信用合作联社凤鸣分社", id: "2011100526"}
+            { text: "雅安办事处领导班子", id: '0201080093',
+                 nodes: [
+                    {text: "张XX", id: "0201080099", icon:"glyphicon glyphicon-user"},
+                    {text: "李XX", id: "0201080100", icon:"glyphicon glyphicon-user"}
                 ]
             },
-            { text: "雅安市名山县农村信用合作联社", id: '0201080132', state: {expanded: false},
+            { text: "雅安办事处业务综合科", id: '0201080094'},
+            { text: "雅安办事处稽核保卫科", id: '0201080095'},
+            { text: "雅安办事处业务财务科", id: '0201080096'},
+            { text: "雨城支行", id: '0201080098', state: {expanded: false},
                 nodes: [
-                    {text: "雅安市名山县农村信用合作联社联社领导", id: "0201080133"}
+                    {text: "雨城支行领导班子", id: "0201080099"},
+                    {text: "雨城支行办公室", id: "0201080100"},
+                    {text: "雨城支行贷管理部", id: "0201080101"},
+                    {text: "雨城支行财务计划部", id: "0201080102"},
+                    {text: "雨城支行保卫部", id: "0201080103"},
+                    {text: "雨城支行稽核监察部", id: "0201080104"},
+                    {text: "雨城支行中间业务部", id: "0201080105"},
+                    {text: "雨城支行企业客户中心", id: "0201080106"},
+                    {text: "雨城支行个人客户中心", id: "0201080107"},
+                    {text: "雨城支行营业部", id: "0201080108"},
+                    {text: "雨城支行中里分理处", id: "0201080109"},
+                    {text: "雨城支行上里分理处", id: "0201080110"},
+                    {text: "雨城支行多营信用社", id: "0201080111"},
+                    {text: "雨城支行碧峰峡分理处", id: "0201080112"},
+                    {text: "雨城支行多营分理处", id: "0201080115"},
+                    {text: "雨城支行河北分理处", id: "0201080116"},
+                    {text: "雨城支行孔坪分理处", id: "0201080118"},
+                    {text: "雨城支行沙坪分理处", id: "0201080119"},
+                    {text: "雨城支行周河分理处", id: "0201080120"},
+                    {text: "雨城支行严桥分理处", id: "0201080121"}
+                ]
+            },
+            { text: "名山支行", id: '0201080132', state: {expanded: false},
+                nodes: [
+                    {text: "名山支行领导", id: "0201080133"},
+                    {text: "名山支行保障部", id: "0201080133"},
+                    {text: "名山支行财务科", id: "0201080133"},
+                    {text: "名山支行新店分理处", id: "0201080133"},
+                    {text: "名山支行万古分理处", id: "0201080133"},
+                    {text: "名山支行中锋分理处", id: "0201080133"},
+                    {text: "名山支行红星分理处", id: "0201080133"}
                 ]
             }
         ]
     }];
 }
 
+
+
 function getPostTree() {
     return [{
-        text: "董事长",
+        text: "雅安农商行",
         tags:
             ['available'],
         nodes: [
-            { text: " 部长", id: '00001', icon:"glyphicon glyphicon-user"},
-            { text: " 总经理", id: '00004', state: {expanded: false},
-                nodes: [
-                    { text: ' 科长', id: '00005', icon:"glyphicon glyphicon-user"},
-                    { text: ' 组长', id: '00006', icon:"glyphicon glyphicon-user"}
+            { text: "领导班子", id: '00001',
+                    nodes: [
+                    { text: '董事长', id: '00005', icon:"glyphicon glyphicon-user",
+                 nodes: [
+                    {text: "张XX", id: "0201080099", icon:"glyphicon glyphicon-user"}
+                ]},
+                    { text: ' 行长', id: '00006', icon:"glyphicon glyphicon-user",
+                 nodes: [
+                    {text: "张XX", id: "0201080099", icon:"glyphicon glyphicon-user"},
+                    {text: "李XX", id: "0201080100", icon:"glyphicon glyphicon-user"}
+                ]},
+                    { text: ' 副行长', id: '00006', icon:"glyphicon glyphicon-user",
+                 nodes: [
+                    {text: "张XX", id: "0201080099", icon:"glyphicon glyphicon-user"},
+                    {text: "李XX", id: "0201080100", icon:"glyphicon glyphicon-user"}
+                ]}
                 ]
-            }]
+
+            },
+            { text: " 办公室", id: '00004', state: {expanded: false},
+                nodes: [
+                    { text: ' 主任', id: '00005', icon:"glyphicon glyphicon-user"},
+                    { text: ' 副主任', id: '00006', icon:"glyphicon glyphicon-user"},
+                    { text: ' 机要秘书', id: '00006', icon:"glyphicon glyphicon-user"},
+                    { text: ' 综合文秘', id: '00006', icon:"glyphicon glyphicon-user"},
+                    { text: ' 档案管理', id: '00006', icon:"glyphicon glyphicon-user"}
+                ]
+            
+            },
+            { text: " 会计财务部", id: '00004', state: {expanded: false},
+                nodes: [
+                    { text: ' 总经理', id: '00005', icon:"glyphicon glyphicon-user"},
+                    { text: ' 副总经理', id: '00006', icon:"glyphicon glyphicon-user"},
+                    { text: ' 预算与财务管理岗', id: '00006', icon:"glyphicon glyphicon-user"},
+                    { text: ' 资产负债管理岗', id: '00006', icon:"glyphicon glyphicon-user"},
+                    { text: ' 费用管理岗', id: '00006', icon:"glyphicon glyphicon-user"}
+                ]
+            
+            },
+            { text: " 业务发展部", id: '00004', state: {expanded: false},
+                nodes: [
+                    { text: ' 总经理', id: '00005', icon:"glyphicon glyphicon-user"},
+                    { text: ' 副总经理', id: '00006', icon:"glyphicon glyphicon-user"},
+                    { text: ' 团队管理岗', id: '00006', icon:"glyphicon glyphicon-user"},
+                    { text: ' 营销推进岗', id: '00006', icon:"glyphicon glyphicon-user"},
+                    { text: ' 综合事务岗', id: '00006', icon:"glyphicon glyphicon-user"}
+                ]
+            
+            },
+            { text: " 人力资源部", id: '00004', state: {expanded: false},
+                nodes: [
+                    { text: ' 总经理', id: '00005', icon:"glyphicon glyphicon-user"},
+                    { text: ' 副总经理', id: '00006', icon:"glyphicon glyphicon-user"},
+                    { text: ' 员工关系管理岗', id: '00006', icon:"glyphicon glyphicon-user"},
+                    { text: ' 薪酬管理岗', id: '00006', icon:"glyphicon glyphicon-user"},
+                    { text: ' 绩效管理岗', id: '00006', icon:"glyphicon glyphicon-user"}
+                ]
+            
+            }
+        ]
     }];
 }
 
