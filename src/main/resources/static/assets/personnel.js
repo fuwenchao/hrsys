@@ -60,9 +60,9 @@ function getPostTree() {
 
 function changeTreeInfo(name){
     var dataArr;
-    if("post" == name){
+    if("post" === name){
         dataArr = getPostTree();
-    }else if("mech"== name){
+    }else if("mech" === name){
         dataArr = getMechTree();
     }
     $('#treeview').treeview({
