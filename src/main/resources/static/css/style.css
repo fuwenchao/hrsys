@@ -3438,9 +3438,6 @@ button.note-color-btn {
 .forms label {
     font-weight: 400;
 }
-.form-control {
-    border-radius: inherit;
-}
 .help-block {
     margin-top: 10px;
 }
